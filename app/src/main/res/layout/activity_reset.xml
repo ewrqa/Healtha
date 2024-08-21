@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical"
+    tools:context=".activity.ResetPasswordActivity">
+    <RelativeLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/forget_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="设置新密码 "
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:orientation="vertical"
+        android:background="@drawable/login_shape"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:layout_height="124dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/rest_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请设置新密码"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/rest_stopeye"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/stop_eye"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/rest_password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请在此确认密码"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/rest_stopeye2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/stop_eye"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/rest_finish"
+            android:layout_width="260dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/forget_shape"
+            android:text="完成"
+            android:textColor="#2196F3"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.VideoFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/video_Tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/video_Tab"
+        android:id="@+id/video_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.kd.easybarrage.BarrageView
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/video_Tab"
+        android:visibility="gone"
+        android:id="@+id/video_barrageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:allow_repeat="true"
+        app:line_height="20dp"
+        app:max_text_size="20"
+        app:min_text_size="14"
+        app:random_color="true"
+        app:size="200"/>
+
+</RelativeLayout>

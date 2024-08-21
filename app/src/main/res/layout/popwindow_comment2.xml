@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/aaaqqq"
+    android:background="#AFACAC"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/aaaarec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+       android:id="@+id/p"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/pop_fapinglun_guanbi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/guanbi2"
+            android:layout_marginRight="40dp"
+            />
+        <EditText
+            android:id="@+id/pop_fapinglun_input"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:hint="暂无评论,快来抢沙发！！"
+            android:background="@drawable/comment_shape"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</RelativeLayout>

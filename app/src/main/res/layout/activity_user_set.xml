@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.UserSetActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/userbuvideo_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/heisefanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/set_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/set_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/set_image"
+            android:text="欧若拉"
+            android:textSize="15sp" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui2"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/set_changepassword"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_qingchuhuancun"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="清除缓存"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10M"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/fanhui"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_pingmuliangdu"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="屏幕亮度"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_banbenjiance"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本检测"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_bangzhuzhongxin"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助中心"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_guanyuwomen"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于我们"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui2"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/set_yaoqinghaoyou"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀请好友"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/fanhui2"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/set_tuichu"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:background="@color/white"
+        android:textColor="@color/red"
+        />
+</LinearLayout>

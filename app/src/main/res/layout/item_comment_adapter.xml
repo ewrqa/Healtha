@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/user_shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/comment_adapter_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        app:riv_corner_radius="120dp"
+        android:layout_gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/comment_adapter_name"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小妮子"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/comment_adapter_message"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/comment_adapter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="sldjflsdjflakjsd
+            flkjasdlfkjasldkjfalskdjflaksjd
+            flksjdflkjssdfasdfsaasdfasdfasdas
+            dfasdfasdfasasdfasdfsaasdfasd"
+            />
+
+
+        <TextView
+            android:id="@+id/comment_Adapter_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_adapter_message"
+            android:layout_marginTop="10dp"
+            android:text="08/20/2018" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/a"
+                android:layout_below="@+id/comment_adapter_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/comment_adapter_dianzan"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/dianzan"
+                    />
+                <TextView
+                    android:id="@+id/comment_adapter_dianzannumber"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99"
+                    />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/a"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/comment_adapter_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/comment_adapter_quxiaodianzan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/quxiaodianzan"
+                />
+            <TextView
+                android:id="@+id/comment_adapter_quxiaodianzannumber"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="99"
+                />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

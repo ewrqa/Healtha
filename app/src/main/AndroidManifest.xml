@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wd.health">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/net_work_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Healtha">
+        <activity
+            android:name=".activity.MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DoctorConsultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.IssueCircleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TopUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.CircleMessageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.CircleofFriendsFragment"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserSetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserTabskActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserCollectCircleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserBuyVideoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserSuggestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.usercollcet.UserCollcetCircleFragment"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.usercollcet.UserCollcetVideoFragment"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.usercollcet.UserCollcetHealthMessageFragment"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserCollectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserMoneyActiivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.HomePageInputActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.HomeActivityHtmlActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.HomeMessageHTMLActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserMessageAddActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserMessageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserConsultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserHistoryConsultActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.HealthinFormtionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.DoctorFragment"
+            android:exported="true" />
+        <activity
+            android:name=".activity.DoctorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.UserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ForgetpasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.healthconsult.LoseWeightFragment"
+            android:exported="true" />
+        <activity
+            android:name=".fragment.healthconsult.NewsFragment"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TabberActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 极光配置 -->
+        <!-- Since JCore2.0.0 Required SDK核心功能 -->
+        <!-- 这个Service要继承JCommonService -->
+        <service
+            android:name=".activity.JGService"
+            android:exported="true"
+            android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

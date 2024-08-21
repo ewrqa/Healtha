@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivityHtmlActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/healthmesage_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/heisefanhui" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="资讯详情"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reeee"
+            android:layout_below="@id/rec"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/healthmessage_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_below="@+id/healthmessage_title"
+                android:id="@+id/healthmessage_zuozhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:layout_below="@+id/healthmessage_title"
+                android:layout_toRightOf="@+id/healthmessage_zuozhe"
+                android:id="@+id/healthmessage_time"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <WebView
+            android:layout_below="@+id/reeee"
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/healthmessage_shoucang"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:src="@mipmap/wodeshoucang"
+        />
+    <ImageView
+        android:id="@+id/healthmessage_shoucang2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:src="@mipmap/shoucang2"
+        />
+    <ImageView
+        android:layout_below="@+id/healthmessage_shoucang"
+        android:id="@+id/healthmessage_fenxaing"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:src="@mipmap/fenxiagn"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

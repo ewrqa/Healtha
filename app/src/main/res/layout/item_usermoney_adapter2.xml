@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/money_adapter_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="签到"
+        />
+    <TextView
+        android:id="@+id/money_adapter_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019.1.1"
+        android:textSize="15sp"
+        android:layout_below="@+id/money_adapter_title2"
+        />
+    <TextView
+        android:id="@+id/money_adapter_money2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="-500H币"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

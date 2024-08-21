@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/pop_video_guanbi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/guanbi" />
+
+        <ImageView
+            android:id="@+id/pop_video_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/boy" />
+        <TextView
+            android:id="@+id/pop_video_price"
+            android:layout_below="@+id/pop_video_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300H币"
+            android:textColor="@color/red"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/aaa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pop_video_price"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的H币:" />
+
+            <TextView
+                android:id="@+id/pop_video_myHbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="176" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H币不足？" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即充值"
+                android:textColor="#2196F3" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/aaa"
+            android:id="@+id/pop_video_buy"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

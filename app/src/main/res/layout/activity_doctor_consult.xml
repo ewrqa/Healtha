@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DoctorConsultActivity">
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/consult_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/heisefanhui" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:id="@+id/consult_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好啊"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/consult_rec"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" />
+    </ScrollView>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/aaaaaaa"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/consult_yuyin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/yuyin" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/consult_jianpan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/jianpan" />
+
+        <EditText
+            android:id="@+id/consult_input"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/message_shape"
+            android:hint="请输入咨询的内容:" />
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/consult_fasongyuyin"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/user_shape"
+            android:hint="按住发送语音" />
+
+
+        <ImageView
+            android:id="@+id/consult_baioqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_toLeftOf="@+id/consult_gengduo"
+            />
+
+        <ImageView
+            android:id="@+id/consult_gengduo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jiahao" />
+
+        <ImageView
+            android:id="@+id/consult_biaoqing"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="60dp"
+            android:src="@mipmap/biaoqing" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/send_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fasong_shape"
+            android:text="发送"
+            android:textColor="@color/white" />
+        <Button
+            android:visibility="gone"
+            android:id="@+id/consult_send_message"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:text="发送"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.DoctorActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/doctor_head"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/tupian"
+            app:riv_corner_radius="120dp" />
+        <ImageView
+            android:id="@+id/doctor_message"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/xiaoxi" />
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/doctor_tab"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        app:tabMode="scrollable"
+        android:layout_height="30dp"/>
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/doctor_viewpager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</LinearLayout>

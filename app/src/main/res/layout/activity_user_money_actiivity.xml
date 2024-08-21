@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.UserMoneyActiivity">
+
+    <RelativeLayout
+        android:id="@+id/titile"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@mipmap/qianbao">
+
+        <RelativeLayout
+            android:id="@+id/a"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/money_shape"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            >
+            <TextView
+                android:id="@+id/usermoney_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nihoaa "
+              android:layout_centerInParent="true"
+                android:textColor="#03A9F4"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/wenzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="满2000H币可提现"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/wenzi"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            >
+            <Button
+                android:id="@+id/usermoney_tixian"
+                android:background="@drawable/login_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="提现"
+                android:layout_marginRight="100dp"
+                android:textColor="#03A9F4"
+                />
+            <Button
+                android:id="@+id/usermoney_chongzhi"
+                android:background="@drawable/login_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="#03A9F4"
+                android:text="充值"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/shuaxin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titile">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/usermoney_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp" />
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp">
+        <ImageView
+            android:id="@+id/usermoney_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/fanhui" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的钱包"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
